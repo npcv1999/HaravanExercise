@@ -1,5 +1,25 @@
 {
   "expo": {
+    "scheme": "deeplinkapp",
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "TestSentry",
+            "project": "Test",
+            "authToken": "ada390d80f694c04993998debc1edd88d1e53af329e642f0b2f69f3fff7ab36c"
+          }
+        }
+      ]
+    },
+    "extra": {
+      "sentryDNS":"https://6fe3156179414b989e91b04edc8523f5@o1239676.ingest.sentry.io/6391297",
+      "facebookAppId": "1342092829611487",
+      "googleWebClientId": "505255502661-mqo6cbv9927qg459ccnk1im51ilivisk.apps.googleusercontent.com",
+      "googleIosClientId": "505255502661-1qsp6olib30hs9ftj9g4fhjqntuk3brj.apps.googleusercontent.com",
+      "googleAndroidClientId": "505255502661-e4f0t15ti7sb6adag8luhba4fi7fukrl.apps.googleusercontent.com"
+    },
     "name": "AwesomeProject",
     "slug": "AwesomeProject",
     "version": "1.0.0",
@@ -18,9 +38,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.AwesomeProject",
+      "usesAppleSignIn": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.331104596902-gvt8lppn2hcsvn8pev6av3f4j3pqins6"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.AwesomeProject",
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +59,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "sentry-expo"
+    ]
   }
 }

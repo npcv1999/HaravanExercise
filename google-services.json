@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "331104596902",
+    "project_id": "haravanexercise",
+    "storage_bucket": "haravanexercise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331104596902:android:077b1e41ce568041071567",
+        "android_client_info": {
+          "package_name": "com.AwesomeProject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331104596902-nudmdr3si1m47161ffm0t5tks28oncq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AwesomeProject",
+            "certificate_hash": "af3d449f84868dc1fe24c28819abd37ee06d82c6"
+          }
+        },
+        {
+          "client_id": "331104596902-hr1igskekmmdtt61meeaj1j400hifkom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcMjh7ll6E2Hn5_ocQ2nJTAeoRQ9ecXok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331104596902-hr1igskekmmdtt61meeaj1j400hifkom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
