@@ -10,6 +10,7 @@ import AuthStack from 'navigation/AuthStack';
 import { Platform, StyleSheet, UIManager, View } from 'react-native';
 import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
+import MainTab from 'navigation/MainTab';
 
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -26,19 +27,10 @@ const Main = () => {
       {/* <SocialLoginScreen /> */}
       <NavigationContainer>
         <AuthStack />
+        {/* <MainTab /> */}
       </NavigationContainer>
     </Provider>
   );
 };
-const style = StyleSheet.create({
-  tile: {
-    backgroundColor: 'lightgrey',
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',
-  },
-  container: {
-    flex: 1,
-  },
-});
 
 export default Main;
